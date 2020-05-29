@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>安装 Arch Linux | SPICE and Wolf （暂定）</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    
+    <meta name="description" content="Just playing around">
+    <link rel="preload" href="/SPICE-and-Wolf/assets/css/0.styles.25ef1b29.css" as="style"><link rel="preload" href="/SPICE-and-Wolf/assets/js/app.d40a4ed0.js" as="script"><link rel="preload" href="/SPICE-and-Wolf/assets/js/2.a9de799e.js" as="script"><link rel="preload" href="/SPICE-and-Wolf/assets/js/6.dea78bc5.js" as="script"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/10.aef1d7cd.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/11.15bdea7e.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/12.f159d74e.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/13.0f5c2711.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/14.e7ef6e4f.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/15.00737c9b.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/16.4092e87b.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/17.0b629da1.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/18.8242a61e.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/19.ed0381c0.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/20.68c1a7f5.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/21.6d304e33.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/22.e4500bfc.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/23.cff270dc.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/24.4cd5e626.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/25.5ac8d942.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/26.54713557.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/27.b1d1ebf0.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/28.09b50a0f.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/29.fc0bdbdd.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/3.bdeca7d2.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/30.09dccb0f.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/31.b451c8c0.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/32.2edd6be3.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/33.a2e2b89a.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/34.cd4b1ba6.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/35.38e98289.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/36.f70f6bcb.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/37.75f25dc4.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/38.cb5d2dcd.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/39.7e6b13f2.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/4.0446400c.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/40.62906212.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/41.76b847d9.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/42.a824c5e9.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/43.c46ec3b7.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/44.4765f48f.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/45.bb37421c.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/46.87b47a7f.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/5.fb2bf350.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/7.4a7b06b2.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/8.fa25345f.js"><link rel="prefetch" href="/SPICE-and-Wolf/assets/js/9.38c152fb.js">
+    <link rel="stylesheet" href="/SPICE-and-Wolf/assets/css/0.styles.25ef1b29.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/SPICE-and-Wolf/" class="home-link router-link-active"><!----> <span class="site-name">SPICE and Wolf （暂定）</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/SPICE-and-Wolf/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/SPICE-and-Wolf/install_arch_linux/.html#" class="nav-link">
+  Placeholder
+</a></div> <a href="https://github.com/project-wolves/SPICE-and-Wolf" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/SPICE-and-Wolf/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/SPICE-and-Wolf/install_arch_linux/.html#" class="nav-link">
+  Placeholder
+</a></div> <a href="https://github.com/project-wolves/SPICE-and-Wolf" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/SPICE-and-Wolf/" class="sidebar-heading clickable router-link-active open"><span>首页</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/SPICE-and-Wolf/plans.html" class="sidebar-link">规划中目录</a></li><li><a href="/SPICE-and-Wolf/drafts/" class="sidebar-link">施工中页面</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>总次</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/SPICE-and-Wolf/knowledges_and_histories/" class="sidebar-link">科普和史话</a></li><li><a href="/SPICE-and-Wolf/experiences_from_writers/" class="sidebar-link">编者经验谈</a></li><li><a href="/SPICE-and-Wolf/install_arch_linux/" aria-current="page" class="sidebar-link">安装 Arch Linux</a></li><li><a href="/SPICE-and-Wolf/softwares/" class="sidebar-link">使用各种软件</a></li><li><a href="/SPICE-and-Wolf/basic_usage/" class="sidebar-link">基本使用</a></li><li><a href="/SPICE-and-Wolf/troubleshooting/" class="sidebar-link">故障排除</a></li><li><a href="/SPICE-and-Wolf/virtualbox_install_and_usage/" class="sidebar-link">附录：安装和设置 VirtualBox</a></li><li><a href="/SPICE-and-Wolf/further_reading/" class="sidebar-link">前方的路</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="安装-arch-linux"><a href="#安装-arch-linux" class="header-anchor">#</a> 安装 Arch Linux</h1> <p>重启电脑，然后让电脑从 U 盘启动。</p> <div class="language-text extra-class"><pre class="language-text"><code>具体怎么搞还是要看电脑的硬件啦 😂
+
+大多数的电脑都有一个在开机时按下一个按键来选择从哪里启动的选项（例如 Dell 和 ThinkPad 是 F12）。
+UEFI 的话， 刚才提到的那个“使用设备” 的选项也可以。
+
+还是去翻一翻汝自己的电脑生产商的说明书更快一点 ……
+</code></pre></div><ul><li>MBR 成功启动以后像这样</li></ul> <p><img src="/SPICE-and-Wolf/assets/img/8.77969781.png" alt=""></p> <p>选第一项。</p> <ul><li>UEFI 成功启动以后像这样:</li></ul> <p><img src="data:image/png;base64,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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwjH8BngcHCwiZ2Z4AAAAASUVORK5CYII=" alt=""></p> <p>还是选第一项。</p> <p>然后等待一会以后会出现……</p> <div class="language-bash extra-class"><pre class="language-bash"><code>root@archiso ~ <span class="token comment">#</span>
+</code></pre></div><p>这就表示已经启动完毕啦 ~(&gt;_&lt;~)</p> <blockquote><p>root是用戶名，前面那個數字是上一個命令的exit status啦，如果正常結束的命令exit status是0，就不會顯示出來，你有 1 2 127 這種都是某種東西報錯了.</p> <p>-- 现任 Arch Linux TU 之一的 farseerfc 在 <a href="https://www.zhihu.com/question/45329752/answer/98733823" target="_blank" rel="noopener noreferrer">https://www.zhihu.com/question/45329752/answer/98733823<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 中写到……</p></blockquote> <h2 id="联网"><a href="#联网" class="header-anchor">#</a> 联网</h2> <div class="language-text extra-class"><pre class="language-text"><code>因为 ArchISO 就是个重启就没了的 Live 环境，安装时需要的软件包都要另外下载。
+</code></pre></div><p>首先当然是联网啦，如果是自动获取 IP 地址的有线网络，那么应该啥也不用做，ping 一下试试？</p> <div class="language-bash extra-class"><pre class="language-bash"><code>root@archiso ~ <span class="token comment"># ping archlinux.org</span>
+<span class="token comment"># 汝应该会看到像这样的东西 ……</span>
+PING archlinux.org <span class="token punctuation">(</span><span class="token number">138.201</span>.81.199<span class="token punctuation">)</span> <span class="token number">56</span><span class="token punctuation">(</span><span class="token number">84</span><span class="token punctuation">)</span> bytes of data.
+<span class="token number">64</span> bytes from apollo.archlinux.org <span class="token punctuation">(</span><span class="token number">138.201</span>.81.199<span class="token punctuation">)</span>: <span class="token assign-left variable">icmp_seq</span><span class="token operator">=</span><span class="token number">1</span> <span class="token assign-left variable">ttl</span><span class="token operator">=</span><span class="token number">49</span> <span class="token assign-left variable">time</span><span class="token operator">=</span><span class="token number">361</span> ms
+……
+</code></pre></div><p>（把电脑用网线接到家里的路由器上就有相同的效果）</p> <p>如果没网的话…… 😂</p> <ul><li>先用 <code>ip link</code> 确定一下网卡</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>root@archiso ~ <span class="token comment"># ip link</span>
+<span class="token number">1</span>: lo: <span class="token operator">&lt;</span>LOOPBACK,UP,LOWER_UP<span class="token operator">&gt;</span> mtu <span class="token number">65536</span> qdisc noqueue state UNKNOWN mode DEFAULT group default qlen <span class="token number">1</span>
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+<span class="token number">2</span>: enp4s0: <span class="token operator">&lt;</span>NO-CARRIER,BROADCAST,MULTICAST,UP<span class="token operator">&gt;</span> mtu <span class="token number">1500</span> qdisc fq_codel state DOWN mode DEFAULT group default qlen <span class="token number">1000</span>
+    link/ether c8:9c:dc:a8:ab:c3 brd ff:ff:ff:ff:ff:ff
+<span class="token number">3</span>: wlp0s29u1u1: <span class="token operator">&lt;</span>BROADCAST,MULTICAST,UP,LOWER_UP<span class="token operator">&gt;</span> mtu <span class="token number">1500</span> qdisc mq state UP mode DORMANT group default qlen <span class="token number">1000</span>
+    link/ether <span class="token number">44</span>:94:fc:0f:63:b9 brd ff:ff:ff:ff:ff:ff
+</code></pre></div><p>这个例子里，lo 是本地环回不用管它，enp 开头的是有线网卡，wlp 开头的是无线网卡。</p> <p>如果汝明明有无线网卡却没识别的话，有可能汝是某无线网卡厂商受害者😂😂</p> <p>这时可以：</p> <ul><li>有 Android 手机的话，手机连 WiFi ，然后用“USB 网络共享”共享给电脑。</li> <li>找个 USB 无线网卡插上 😂</li> <li>连有线😂😂</li> <li>如果有无线网卡的话，试试连接到 WiFi ……
+<ul><li>输入 <code>wifi-menu</code> ,等一下会看到找到的 WiFi 网络的列表</li></ul></li></ul> <p><img src="/SPICE-and-Wolf/assets/img/10.78462821.png" alt=""></p> <ul><li>选择一个网络，保存网络配置文件</li></ul> <p><img src="/SPICE-and-Wolf/assets/img/11.8d9b2aff.png" alt=""></p> <ul><li>如果有密码的话，输入密码</li></ul> <p><img src="/SPICE-and-Wolf/assets/img/12.3ed21991.png" alt=""></p> <ul><li>然后按 Enter 确认，连到 WiFi 的话会返回 Shell。</li></ul> <p>如果汝的 WiFi 是用 WPA2-Enterpise 验证的（输入用户名和密码那种）……wifi-menu 现在还不支持这个，那么汝大概需要自己准备wpa_applicant的配置文件。</p> <ul><li><p>大概是这个样子的（如果汝使用的是WPA-EAP，并且二阶段认证是MSCHAPv2的话）</p> <div class="language-text extra-class"><pre class="language-text"><code>   network={
+       ssid=&quot;汝WiFi的名字&quot;
+       key_mgmt=WPA-EAP
+       eap=PEAP
+       identity=&quot;汝的用户名&quot;
+       password=&quot;汝的密码&quot;
+       phase2=&quot;auth=MSCHAPV2&quot; 
+   }
+</code></pre></div></li> <li><p>注意保留引号，然后上面那个V要大写。</p></li> <li><p>然后汝把这个东西保存成比如说<code>wpa.conf</code>，然后就可以输入<code>sudo wpa_supplicant -i 汝的网卡 -c wap.conf</code> 打开WiFi了</p></li> <li><p>至于汝的网卡叫什么……就是上面说的运行<code>ip link</code>列出的那个叫做<code>wlp</code>的东西。</p></li></ul> <p>谁叫 Arch 连不上网的话都装不了 😂</p> <p>另外，如果汝连接的网络需要网页登录（Captive Portal）,可以用 <code>elinks</code> 碰碰运气 😂</p> <div class="language-bash extra-class"><pre class="language-bash"><code>    <span class="token comment"># 用汝的门户的 URL 替换 &lt;your_captive_portal_url&gt;</span>
+    <span class="token comment"># 如果不知道的话，随便访问一个 HTTP 网站试试，应该就会被重定向到 Portal 了</span>
+    root@archiso ~ <span class="token comment"># elinks http://&lt;your_captive_portal_url&gt;</span>
+</code></pre></div><p>几个可供使用的 Captive Portal：</p> <ul><li><a href="http://captive.v2ex.co/" target="_blank" rel="noopener noreferrer">http://captive.v2ex.co/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="http://detectportal.firefox.com/" target="_blank" rel="noopener noreferrer">http://detectportal.firefox.com/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="http://captive.apple.com/" target="_blank" rel="noopener noreferrer">http://captive.apple.com/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <h2 id="时间同步"><a href="#时间同步" class="header-anchor">#</a> 时间同步</h2> <p>用 <code>timedatectl set-ntp true</code> 保证时间同步 。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>root@archiso ~ <span class="token comment"># timedatectl set-ntp true</span>
+root@archiso ~ <span class="token comment"># timedatectl status</span>
+    Local time: Fri <span class="token number">2016</span>-10-28 <span class="token number">17</span>:39:42 UTC
+    Universal time: Fri <span class="token number">2016</span>-10-28 <span class="token number">17</span>:39:42 UTC
+    RTC time: Fri <span class="token number">2016</span>-10-28 <span class="token number">17</span>:39:42
+    Time zone: UTC <span class="token punctuation">(</span>UTC, +0000<span class="token punctuation">)</span>
+Network <span class="token function">time</span> on: <span class="token function">yes</span>
+NTP synchronized: no
+RTC <span class="token keyword">in</span> <span class="token builtin class-name">local</span> TZ: no
+</code></pre></div><p>因为有不少操作需要准确的时间呐，例如 HTTPS 和 GnuPG 都需要准确的时间来验证证书的有效性。</p> <p>但是如果因为各种原因没法同步的话，那就只好手动设置咯~</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># timectl set-time &quot;yyyy-MM-dd hh:mm:ss&quot;</span>
+root@archiso ~ <span class="token comment"># timectl set-time &quot;2016-10-28 17:39:42&quot;</span>
+</code></pre></div><h2 id="准备硬盘空间"><a href="#准备硬盘空间" class="header-anchor">#</a> 准备硬盘空间</h2> <p>这里用 cgdisk (UEFI)/ cfdisk (MBR) 来给硬盘分区。</p> <p>首先输入 <code>lsblk</code> 看看汝的硬盘是哪个设备：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>root@archiso ~ <span class="token comment"># lsblk</span>
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sda      <span class="token number">8</span>:0    <span class="token number">0</span> <span class="token number">463</span>.9G  <span class="token number">0</span> disk
+├─sda1   <span class="token number">8</span>:1    <span class="token number">0</span>   512M  <span class="token number">0</span> part
+├─sda2   <span class="token number">8</span>:2    <span class="token number">0</span>    16M  <span class="token number">0</span> part
+├─sda3   <span class="token number">8</span>:3    <span class="token number">0</span> <span class="token number">103</span>.4G  <span class="token number">0</span> part
+└─sda4   <span class="token number">8</span>:4    <span class="token number">0</span> <span class="token number">253</span>.4G  <span class="token number">0</span> part
+sdb      <span class="token number">8</span>:16   <span class="token number">1</span>   <span class="token number">7</span>.5G  <span class="token number">0</span> disk
+└─sdb1   <span class="token number">8</span>:17   <span class="token number">1</span>   <span class="token number">7</span>.5G  <span class="token number">0</span> part /run/archiso/bootmnt
+sr0     <span class="token number">11</span>:0    <span class="token number">1</span>  1024M  <span class="token number">0</span> rom
+loop0    <span class="token number">7</span>:0    <span class="token number">0</span> <span class="token number">346</span>.1M  <span class="token number">1</span> loop /run/archiso/sfs/airootfs
+</code></pre></div><p>如果那是一块新硬盘或者已经清空的硬盘的话，汝大概看不到 /dev/sda1 一类的分区。</p> <p>如果汝没看到 /dev/sda 却看到了一些其它的东西的话：</p> <ul><li><p>/dev/nvme0n1 一类的：表示汝的电脑上有一块 NVMe SSD （发出了羡慕的目光（咳咳））</p></li> <li><p>/dev/mmcblk0 一类的：表示汝的电脑上有 eMMC 存储（例如是早期的 Windows 8 平板电脑啥的）</p> <p>这种时候的话可能汝 ArchISO 的 U 盘就跑到 sda 去了，在下面的操作时记得注意一下。</p></li></ul> <p>比如咱这里 sda 是咱的硬盘，于是运行 cgdisk 时加上 /dev/sda 这个参数：</p> <div class="language-text extra-class"><pre class="language-text"><code>/dev 是一个虚拟目录（也就是并不在硬盘上），它会把电脑上的设备映射成一个个文件  _(:з」∠)_
+</code></pre></div><p>再学究的解释真不会了……</p> <h3 id="cgdisk"><a href="#cgdisk" class="header-anchor">#</a> cgdisk</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>root@archiso ~ <span class="token comment"># cgdisk /dev/sda</span>
+</code></pre></div><p>如果汝在用 cgdisk 的话汝可能会看到这样的提示：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>    Warning<span class="token operator">!</span> Non-GPT or damaged disk detected<span class="token operator">!</span> This program will attempt to
+    convert to GPT form or repair damage to GPT data structures, but may not
+    succeed. Use gdisk or another disk repair tool <span class="token keyword">if</span> you have a damaged GPT
+    disk.
+
+    Press any key to continue<span class="token punctuation">..</span><span class="token punctuation">..</span>
+</code></pre></div><p>这表示 cdgisk 在这块硬盘上找不到 GPT 分区表。如果这是一块新硬盘或者已经清空的硬盘的话 不必担心，继续即可。否则请立即停下来检查一下硬盘（或者汝有这块硬盘的备份的话也可以继续）。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>                                            cgdisk <span class="token number">1.0</span>.1
+
+                                        Disk Drive: /dev/sda
+                                    Size: <span class="token number">972906545</span>, <span class="token number">463.9</span> GiB
+
+Part. <span class="token comment">#     Size        Partition Type            Partition Name</span>
+----------------------------------------------------------------
+            <span class="token number">1007.0</span> KiB  <span class="token function">free</span> space
+<span class="token number">1</span>           <span class="token number">512.0</span> MiB   EFI System                EFI system partition
+<span class="token number">2</span>           <span class="token number">16.0</span> MiB    Microsoft reserved        Microsoft reserved partition
+<span class="token number">3</span>           <span class="token number">103.4</span> GiB   Microsoft basic data      Basic data partition
+<span class="token number">4</span>           <span class="token number">253.4</span> GiB   Microsoft basic data      Basic data partition
+            <span class="token number">106.6</span> GiB   <span class="token function">free</span> space
+
+
+
+
+
+    <span class="token punctuation">[</span> Align  <span class="token punctuation">]</span>  <span class="token punctuation">[</span> Backup <span class="token punctuation">]</span>  <span class="token punctuation">[</span>  Help  <span class="token punctuation">]</span>  <span class="token punctuation">[</span>  Load  <span class="token punctuation">]</span>  <span class="token punctuation">[</span>  New   <span class="token punctuation">]</span>  <span class="token punctuation">[</span>  Quit  <span class="token punctuation">]</span>  <span class="token punctuation">[</span> Verify <span class="token punctuation">]</span>  <span class="token punctuation">[</span> Write  <span class="token punctuation">]</span>
+</code></pre></div><p>cgdisk 的界面大概像这样啦，用上下方向键把光标移动到汝之前的空闲空间上去（例如咱这里是最后一个）</p> <p>新硬盘的话应该只有一个 free space 😂</p> <p>用左右方向键把下面一排按钮上的光标移动到 New 上，然后按 Enter。</p> <p>（这里看不出光标😂，黑色背景下光标应该是白的吧😂😂）</p> <p>接下来会问几个问题（# 开头的是咱加上的注释😂）：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 数字可能和汝看到的不一样😂</span>
+<span class="token comment"># 起始扇区的位置，直接 Enter 就行</span>
+First sector <span class="token punctuation">(</span><span class="token number">749424640</span>-972906511, default <span class="token operator">=</span> <span class="token number">749424640</span><span class="token punctuation">)</span>:
+<span class="token comment"># 大小，可以是扇区数，也可以是实际的大小（例如 100M，20G一类的），要用掉整个剩余空闲空间的话，直接 Enter 就行。</span>
+Size <span class="token keyword">in</span> sectors or <span class="token punctuation">{</span>KMGTP<span class="token punctuation">}</span> <span class="token punctuation">(</span>default <span class="token operator">=</span> <span class="token number">223481872</span><span class="token punctuation">)</span>:
+<span class="token comment"># 分区类型，默认的就好</span>
+<span class="token comment"># 但是如果要建立新的 EFI 系统分区的话 ，分区类型是 `ef00`</span>
+<span class="token comment"># 但是如果要建立新的 交换空间（就是虚拟内存啦）的话 ，分区类型是 `8200`</span>
+Current <span class="token builtin class-name">type</span> is <span class="token number">8300</span> <span class="token punctuation">(</span>Linux filesystem<span class="token punctuation">)</span>
+Hex code or GUID <span class="token punctuation">(</span>L to show codes, Enter <span class="token operator">=</span> <span class="token number">8300</span><span class="token punctuation">)</span>:
+<span class="token comment"># 设置卷标，不设置也行。</span>
+Current partition name is <span class="token string">''</span>
+Enter new partition name, or <span class="token operator">&lt;</span>Enter<span class="token operator">&gt;</span> to use the current name:
+</code></pre></div><p>然后汝应该会发现下面的空闲空间变成 Linux filesystem 了呗~</p> <p>要保存分区表的话，用左右方向键把下面一排按钮上的光标移动到 Write 上，然后按 Enter。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>    Are you sure you want to <span class="token function">write</span> the partition table to disk? <span class="token punctuation">(</span>yes or no<span class="token punctuation">)</span>:
+
+            Warning<span class="token operator">!</span><span class="token operator">!</span> This may destroy data on your disk<span class="token operator">!</span>
+</code></pre></div><p>在这里输入 <code>yes</code> （就是 yes，不是 y Y YES 啥的😂），然后按 Enter。</p> <p>然后下面会闪过一行 &quot;The operation has completed successfully&quot; ,这时就可以退出了。</p> <p>用左右方向键把下面一排按钮上的光标移动到 Quit 上，然后按 Enter。</p> <h3 id="cfdisk"><a href="#cfdisk" class="header-anchor">#</a> cfdisk</h3> <p>如果汝在用 cfdisk 的话汝可能会看到这样的提示：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>                                ┌ Select label <span class="token builtin class-name">type</span> ───┐
+                                │ gpt                  │
+                                │ dos                  │
+                                │ sgi                  │
+                                │ sun                  │
+
+
+                Device does not contain a recognized partition table.
+        Select a <span class="token builtin class-name">type</span> to create a new label or press <span class="token string">'L'</span> to load script file.
+</code></pre></div><p>这表示 cfgisk 在这块硬盘上找不到可以识别的分区表。如果这是一块新硬盘或者已经清空的硬盘的话 不必担心，选择 dos 继续即可。否则请立即停下来检查一下硬盘（或者汝有这块硬盘的备份的话也可以继续）。</p> <p>这就是 cfdisk 的主界面啦：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>                                                Disk: /dev/sdc
+                            Size: <span class="token number">465.8</span> GiB, <span class="token number">500107862016</span> bytes, <span class="token number">976773168</span> sectors
+                                    Label: dos, identifier: 0x178bfb32
+
+Device            Boot               Start              End          Sectors         Size       Id Type
+<span class="token operator">&gt;&gt;</span>  Free space                            <span class="token number">2048</span>        <span class="token number">976773167</span>        <span class="token number">976771120</span>       <span class="token number">465</span>.8G                           
+
+
+
+
+
+
+
+
+
+
+┌──────────────────────────────────────────────────────────┐
+│Filesystem UUID: 3AB8802AB87FE2B5                                                                                   │
+│     Filesystem: ntfs                                                                                               │
+└──────────────────────────────────────────────────────────┘
+                        <span class="token punctuation">[</span>   New  <span class="token punctuation">]</span>  <span class="token punctuation">[</span>  Quit  <span class="token punctuation">]</span>  <span class="token punctuation">[</span>  Help  <span class="token punctuation">]</span>  <span class="token punctuation">[</span>  Write <span class="token punctuation">]</span>  <span class="token punctuation">[</span>  Dump  <span class="token punctuation">]</span>
+
+
+                                    Create new partition from <span class="token function">free</span> space
+</code></pre></div><p>也是选择 new 然后输入大小：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>Partition size:
+<span class="token comment"># 然后可能会让汝选择是主分区还是扩展分区，按需选择就 OK </span>
+<span class="token punctuation">[</span>primary<span class="token punctuation">]</span>  <span class="token punctuation">[</span>extended<span class="token punctuation">]</span>
+</code></pre></div><p>但是如果汝需要调整分区类型的话，选中要改变的分区然后把光标移动到 Type 上按 Enter，选择一个分区类型：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>                                                Disk: /dev/sdc
+                            Size: <span class="token number">465.8</span> GiB, <span class="token number">500107862016</span> bytes, <span class="token number">976773168</span> sectors
+                                    Label: dos, identifier: 0xe0a3ecf7
+
+Device           Boot               Start             End        Sectors        Size      Id Type
+<span class="token operator">&gt;&gt;</span>  /dev/sdc1                            <span class="token number">2048</span>         <span class="token number">1050623</span>        <span class="token number">1048576</span>        512M      ef EFI <span class="token punctuation">(</span>FAT-12/16/32<span class="token punctuation">)</span>     
+/dev/sdc2                         <span class="token number">1050624</span>       <span class="token number">976773167</span>      <span class="token number">975722544</span>      <span class="token number">465</span>.3G      <span class="token number">83</span> Linux
+
+
+
+
+
+
+
+
+
+
+┌──────────────────────────────────────────────────────────┐
+│Partition type: EFI <span class="token punctuation">(</span>FAT-12/16/32<span class="token punctuation">)</span> <span class="token punctuation">(</span>ef<span class="token punctuation">)</span>                                                                             │
+└──────────────────────────────────────────────────────────┘
+        <span class="token punctuation">[</span>Bootable<span class="token punctuation">]</span>  <span class="token punctuation">[</span> Delete <span class="token punctuation">]</span>  <span class="token punctuation">[</span> Resize <span class="token punctuation">]</span>  <span class="token punctuation">[</span>  Quit  <span class="token punctuation">]</span>  <span class="token punctuation">[</span>  Type  <span class="token punctuation">]</span>  <span class="token punctuation">[</span>  Help  <span class="token punctuation">]</span>  <span class="token punctuation">[</span>  Write <span class="token punctuation">]</span>  <span class="token punctuation">[</span>  Dump  <span class="token punctuation">]</span>
+</code></pre></div><p>要保存分区表的话，用左右方向键把下面一排按钮上的光标移动到 Write 上，然后按 Enter。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>    Are you sure you want to <span class="token function">write</span> the partition table to disk? <span class="token punctuation">(</span>yes or no<span class="token punctuation">)</span>:
+</code></pre></div><p>在这里输入 <code>yes</code> （就是 yes，不是 y Y YES 啥的😂），然后按 Enter。</p> <p>然后下面会闪过一行 &quot;The operation has completed successfully&quot; ,这时就可以退出了。</p> <p>用左右方向键把下面一排按钮上的光标移动到 Quit 上，然后按 Enter。</p> <p>然而汝以为这样就结束了？还没格式化呢 (╯°Д°）╯︵/(.□ . )</p> <h2 id="创建文件系统-挂载"><a href="#创建文件系统-挂载" class="header-anchor">#</a> 创建文件系统+挂载</h2> <h3 id="所以挂载是啥玩意？"><a href="#所以挂载是啥玩意？" class="header-anchor">#</a> 所以挂载是啥玩意？</h3> <p>GNU/Linux 不是用 Windows 那样的盘符来分区的啦，GNU/Linux 继承了 Unix 的整个目录结构 从根目录 / 开始。然后下面是各种子目录。</p> <p>大多数的 GNU/Linux 发行版都遵循一个叫做“文件系统层次结构标准”（Filesystem Hierarchy Standard， 有时也简称作 FHS）的标准，汝可以 <code>ls /</code> 一下看看会不会发现一些例如 /bin /home /usr 一类的目录？ 这就是拜这个标准所赐 😂</p> <p>在 Windows 里，汝大概会把不同的文件放在不同的盘符下的硬盘分区里。 在 GNU/Linux 中，咱们通常就是把不同的分区 挂载到整个目录结构中的一处。向挂载好的目录写入的文件就会保存在被挂载的磁盘分区上。</p> <p>首先还是用 <code>lsblk</code> 确定一下分区的名称，为了以防万一记得加上 -f 参数：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>root@archiso ~ <span class="token comment"># lsblk -f</span>
+NAME   FSTYPE   LABEL       UUID                                 MOUNTPOINT
+sda
+├─sda1 vfat               3C44-B4ED
+├─sda2
+├─sda3 ntfs               42E243C5E243BBC3
+├─sda4 ntfs   新加卷      58741F29741F0A00
+└─sda5
+sdb
+└─sdb1 vfat   ARCH_201610 EAC8-F012                            /run/archiso/bootmnt
+sr0
+loop0  squashfs                                                  /run/archiso/sfs/airootfs
+</code></pre></div><p>第一排分别表示设备名称，文件系统类型，卷标，UUID和挂载点。</p> <p>咱这里的话 sda1 那个 vfat 分区就是 EFI 系统分区啦，sda5 就是刚刚新建的分区啦~（因为还没格式化所以没有文件系统😂）</p> <p>用 <code>mkfs.ext4</code> 把那个分区格式化成 ext4 文件系统咯~</p> <div class="language-text extra-class"><pre class="language-text"><code>mkfs 可以格式化成某一个汝指定的文件系统（就像刚才那样 mkfs.ext4 可以格式化出一个 ext4 文件系统）
+
+ext 家族大概是 GNU/Linux 最古老，应用的最广泛的文件系统了吧……
+
+当然可以用的文件系统有很多啦，如果汝想再了解一些的话，可以去 ArchWiki 看一看：
+
+https://wiki.archlinux.org/index.php/File_systems
+
+记得自己看清楚是哪个分区别格式化错了 😂
+</code></pre></div><div class="language-bash extra-class"><pre class="language-bash"><code>root@archiso ~ <span class="token comment"># mkfs.ext4 /dev/sda5</span>
+<span class="token function">mke2fs</span> <span class="token number">1.43</span>.3 <span class="token punctuation">(</span>04-Sep-2016<span class="token punctuation">)</span>
+Creating filesystem with <span class="token number">27935234</span> 4k blocks and <span class="token number">6987776</span> inodes
+Filesystem UUID: a3943e57-6217-4a5f-8e57-ade5771315c0
+Superblock backups stored on blocks:
+    <span class="token number">32768</span>, <span class="token number">98304</span>, <span class="token number">163840</span>, <span class="token number">229376</span>, <span class="token number">294912</span>, <span class="token number">819200</span>, <span class="token number">884736</span>, <span class="token number">1605632</span>, <span class="token number">2654208</span>,
+    <span class="token number">4096000</span>, <span class="token number">7962624</span>, <span class="token number">11239424</span>, <span class="token number">20480000</span>, <span class="token number">23887872</span>
+
+Allocating group tables: <span class="token keyword">done</span>
+Writing inode tables: <span class="token keyword">done</span>
+Creating journal <span class="token punctuation">(</span><span class="token number">131072</span> blocks<span class="token punctuation">)</span>: <span class="token keyword">done</span>
+Writing superblocks and filesystem accounting information: <span class="token keyword">done</span>
+
+root@archiso ~ <span class="token comment">#</span>
+</code></pre></div><p>等一排文字闪过就格式化完了……</p> <p>如果要格式化新的 EFI 系统分区的话，用 <code>mkfs.vfat</code></p> <p>如果要格式化新的 交换空间的话，用 <code>mkswap</code></p> <p>接下来用 mount 挂载分区啦~ （。＞ω＜）。</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># mount &lt;设备名称&gt; &lt;目标文件夹&gt;</span>
+<span class="token comment"># /mnt 挺合适的</span>
+root@archiso ~ <span class="token comment"># mount /dev/sda5 /mnt</span>
+<span class="token comment"># 如果要挂载 EFI 系统分区的话，建议挂载到 /mnt/boot</span>
+<span class="token comment"># 所以先建立相应的文件夹</span>
+root@archiso ~ <span class="token comment"># mkdir /mnt/boot</span>
+root@archiso ~ <span class="token comment"># mount /dev/sda1 /mnt/boot</span>
+<span class="token comment"># 有交换空间的话不用挂载，用 swapon 命令。</span>
+root@archiso ~ <span class="token comment"># swapon /dev/sda6</span>
+</code></pre></div><h3 id="选择软件仓库镜像"><a href="#选择软件仓库镜像" class="header-anchor">#</a> 选择软件仓库镜像</h3> <div class="language-text extra-class"><pre class="language-text"><code>软件仓库（在Debian系发行版中，又叫做“软件源”）是软件包存储的地方。通常我们所说的软件仓库指在线软件仓库，亦即用户从互联网获取软件的地方。
+</code></pre></div><p>用 nano 打开 <code>/etc/pacman.d/mirrorlist</code></p> <div class="language-bash extra-class"><pre class="language-bash"><code>root@archiso ~ <span class="token comment"># nano /etc/pacman.d/mirrorlist</span>
+
+
+GNU <span class="token function">nano</span> <span class="token number">2.7</span>.0                        File: /etc/pacman.d/mirrorlist
+
+<span class="token comment">##</span>
+<span class="token comment">## Arch Linux repository mirrorlist</span>
+<span class="token comment">## Sorted by mirror score from mirror status page</span>
+<span class="token comment">## Generated on 2016-10-01</span>
+<span class="token comment">##</span>
+
+<span class="token comment">## Score: 0.2, France</span>
+Server <span class="token operator">=</span> http://archlinux.polymorf.fr/<span class="token variable">$repo</span>/os/<span class="token variable">$arch</span>
+<span class="token comment">## Score: 0.3, France</span>
+Server <span class="token operator">=</span> http://arch.tamcore.eu/<span class="token variable">$repo</span>/os/<span class="token variable">$arch</span>
+<span class="token comment">## Score: 0.3, Germany</span>
+Server <span class="token operator">=</span> http://mirrors.cicku.me/archlinux/<span class="token variable">$repo</span>/os/<span class="token variable">$arch</span>
+<span class="token comment">## Score: 0.3, Czech Republic</span>
+Server <span class="token operator">=</span> http://ftp.sh.cvut.cz/arch/<span class="token variable">$repo</span>/os/<span class="token variable">$arch</span>
+<span class="token comment">## Score: 0.3, Germany</span>
+Server <span class="token operator">=</span> http://mirror.js-webcoding.de/pub/archlinux/<span class="token variable">$repo</span>/os/<span class="token variable">$arch</span>
+<span class="token comment">## Score: 0.4, Netherlands</span>
+Server <span class="token operator">=</span> http://ftp.nluug.nl/os/Linux/distr/archlinux/<span class="token variable">$repo</span>/os/<span class="token variable">$arch</span>
+<span class="token comment">## Score: 0.4, Poland</span>
+                                        <span class="token punctuation">[</span> Read <span class="token number">517</span> lines <span class="token punctuation">]</span>
+^G Get Help    ^O Write Out   ^W Where Is    ^K Cut Text    ^J Justify     ^C Cur Pos     ^Y Prev Page
+^X Exit        ^R Read File   ^<span class="token punctuation">\</span> Replace     ^U Uncut Text  ^T To Spell    ^_ Go To Line  ^V Next Page
+</code></pre></div><p>这是 GNU nano 的主界面，最简单的方法还是把下面那些 Mirrors 先全删掉然后输入一个新的， 用光标指向某一行以后同时按下 Ctrl+K 就好。然后自己输入一个 Mirror ，下面给出几个中国国内的 Mirror：</p> <p>（所谓的 Ctrl+K 就是这两个键一起按😂）</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 网易</span>
+Server <span class="token operator">=</span> http://mirrors.163.com/archlinux/<span class="token variable">$repo</span>/os/<span class="token variable">$arch</span>
+<span class="token comment"># 清华大学 TUNA 协会</span>
+Server <span class="token operator">=</span> https://mirrors.tuna.tsinghua.edu.cn/archlinux/<span class="token variable">$repo</span>/os/<span class="token variable">$arch</span>
+<span class="token comment"># 中国科学技术大学</span>
+Server <span class="token operator">=</span> https://mirrors.ustc.edu.cn/archlinux/<span class="token variable">$repo</span>/os/<span class="token variable">$arch</span>
+<span class="token comment"># 西安交通大学</span>
+Server <span class="token operator">=</span> https://mirrors.xjtu.edu.cn/archlinux/<span class="token variable">$repo</span>/os/<span class="token variable">$arch</span>
+</code></pre></div><p>输入完以后按下 Ctrl+O 写入，按 Enter 确定，再按 Ctrl+X 退出。</p> <p>然后用 <code>pacman -Syy</code> 刷新一下软件包数据库。</p> <div class="language-bash extra-class"><pre class="language-bash"><code>root@archiso ~ <span class="token comment"># pacman -Syy</span>
+:: Synchronizing package databases<span class="token punctuation">..</span>.
+core                                  <span class="token number">120.9</span> KiB  <span class="token number">4</span>.92M/s 00:00 <span class="token punctuation">[</span><span class="token comment">##################################] 100%</span>
+extra                                <span class="token number">1755.6</span> KiB  <span class="token number">5</span>.24M/s 00:00 <span class="token punctuation">[</span><span class="token comment">##################################] 100%</span>
+community                               <span class="token number">3.7</span> MiB  <span class="token number">6</span>.82M/s 00:01 <span class="token punctuation">[</span><span class="token comment">##################################] 100%</span>
+root@archiso ~ <span class="token comment">#</span>
+</code></pre></div><h2 id="安装基本系统"><a href="#安装基本系统" class="header-anchor">#</a> 安装基本系统</h2> <p>用 pacstrap 安装基本系统：</p> <ul><li>默认会安装 base 元包（包含基本系统所需的依赖）。</li></ul> <blockquote><p>如果汝在别的地方见到说 base 是个软件包组的说法，忘了它吧……</p></blockquote> <ul><li>然后大多数情况下，汝还需要一个内核。目前官方仓库里有这些：</li></ul> <blockquote><ul><li>linux : 当前的稳定版本内核</li> <li>linux-lts : 当前的长期支持版本内核</li> <li>linux-hardened : 来自 <a href="https://github.com/anthraxx/linux-hardened" target="_blank" rel="noopener noreferrer">https://github.com/anthraxx/linux-hardened<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 的安全强化内核</li> <li>linux-zen : 来自 <a href="https://github.com/zen-kernel" target="_blank" rel="noopener noreferrer">https://github.com/zen-kernel<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 的预载一定量优化的内核， 有人觉得在心理上会觉得跑得比 linux 快.......</li></ul> <p>对于大多数情况下，汝可能会考虑安装固件包 linux-firmware 。</p></blockquote> <ul><li>以及一个文字编辑器，例如刚才用到的 <code>nano</code> 。</li></ul> <blockquote><p>诶，base 组不包含 live 环境中所有的软件包么？是的， <a href="https://projects.archlinux.org/archiso.git/tree/configs/releng/packages.x86_64" target="_blank" rel="noopener noreferrer">https://projects.archlinux.org/archiso.git/tree/configs/releng/packages.x86_64<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 列出了在 ISO 中的 live 环境中安装的但不在 base 包中的软件包。</p></blockquote> <ul><li>以及一些文件系统工具，如果汝和咱这里一样用了 ext4 的话，安装 e2fsprogs 就好， 需要读写其它文件系统的话，可以在 <a href="https://wiki.archlinux.org/index.php/File_system" target="_blank" rel="noopener noreferrer">https://wiki.archlinux.org/index.php/File_system<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 找到相应的用户空间工具。</li> <li>要通过 AUR 或者 ABS 编译安装软件包,还需要安装 base-devel 啦 （现在它还是个软件包组）。</li> <li>要通过刚才用到的 wifi_menu 连接无线网络的话，汝可能需要这些：</li></ul> <blockquote><p>netctl iw dialog wpa_supplicant wpa_actiond</p></blockquote> <p>于是一个栗子大概像这样</p> <div class="language-text extra-class"><pre class="language-text"><code>root@archiso ~ # pacstrap /mnt base base-devel linux nano e2fsprogs iw dialog wpa_supplicant wpa_actiond
+</code></pre></div><p>其他软件以后会用 pacman 再安装啦~</p> <p>安装完以后大概会是这个样子 (´・ω・｀)</p> <div class="language-text extra-class"><pre class="language-text"><code>pacstrap /mnt base linux    29.09s user 2.61s system 85% cpu 37.271 total
+</code></pre></div><h2 id="准备进入-chroot-环境"><a href="#准备进入-chroot-环境" class="header-anchor">#</a> 准备进入 chroot 环境</h2> <p>生成 fstab 啦 ~</p> <div class="language-text extra-class"><pre class="language-text"><code>所以 fstab 又是个啥玩意？
+
+fstab(5)文件可用于定义磁盘分区，各种其他块设备或远程文件系统应如何装入文件系统。
+
+每个文件系统在一个单独的行中描述。这些定义将在引导时动态地转换为系统挂载单元，并在系统管理器的配置重新加载时转换。
+在启动需要挂载的服务之前，默认设置会自动fsck和挂载文件系统。例如，systemd会自动确保远程文件系统挂载
+（如NFS或Samba）仅在网络设置完成后启动。因此，在/etc/fstab中指定的本地和远程文件系统挂载应该是开箱即用的。
+
+emmmmm
+</code></pre></div><div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># genfstab</span>
+usage: genfstab <span class="token punctuation">[</span>options<span class="token punctuation">]</span> root
+
+Options:
+    -L             Use labels <span class="token keyword">for</span> <span class="token builtin class-name">source</span> identifiers <span class="token punctuation">(</span>shortcut <span class="token keyword">for</span> -t LABEL<span class="token punctuation">)</span>
+    -p             Exclude pseudofs mounts <span class="token punctuation">(</span>default behavior<span class="token punctuation">)</span>
+    -P             Include printing mounts
+    -t TAG         Use TAG <span class="token keyword">for</span> <span class="token builtin class-name">source</span> identifiers
+    -U             Use UUIDs <span class="token keyword">for</span> <span class="token builtin class-name">source</span> identifiers <span class="token punctuation">(</span>shortcut <span class="token keyword">for</span> -t UUID<span class="token punctuation">)</span>
+
+    -h             Print this <span class="token builtin class-name">help</span> message
+
+genfstab generates output suitable <span class="token keyword">for</span> addition to an fstab <span class="token function">file</span> based on the
+devices mounted under the mountpoint specified by the given root.
+
+root@archiso ~ <span class="token comment"># genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</span>
+</code></pre></div><p>然后用 arch-chroot 向新系统出发~</p> <div class="language-text extra-class"><pre class="language-text"><code>因为还有些配置没完成嘛……
+</code></pre></div><div class="language-bash extra-class"><pre class="language-bash"><code>root@archiso ~ <span class="token comment"># arch-chroot -help</span>
+usage: arch-chroot chroot-dir <span class="token punctuation">[</span>command<span class="token punctuation">]</span>
+
+    -h                  Print this <span class="token builtin class-name">help</span> message
+    -u <span class="token operator">&lt;</span>user<span class="token operator">&gt;</span><span class="token punctuation">[</span>:group<span class="token punctuation">]</span>   Specify non-root user and optional group to use
+
+If <span class="token string">'command'</span> is unspecified, arch-chroot will launch /bin/bash.
+
+root@archiso ~ <span class="token comment"># arch-chroot /mnt /bin/bash</span>
+<span class="token punctuation">[</span>root@archiso /<span class="token punctuation">]</span> <span class="token comment">#</span>
+</code></pre></div><h3 id="设置基本系统"><a href="#设置基本系统" class="header-anchor">#</a> 设置基本系统</h3> <div class="language-text extra-class"><pre class="language-text"><code>这一节以 # 开头只表示以 root 用户运行，汝不用把 # 输入到终端里啦~
+</code></pre></div><ul><li><p>设置时区（中国的时区是 Asia/Shanghai）</p> <div class="language-text extra-class"><pre class="language-text"><code># ln -s &lt;源文件&gt; &lt;目标&gt; 创建一个符号链接
+# ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+</code></pre></div></li> <li><p>设置时间标准 为 UTC，并调整 时间漂移:</p> <div class="language-text extra-class"><pre class="language-text"><code># hwclock --systohc --utc
+</code></pre></div></li></ul> <p>如果汝正在尝试安装双系统，在进入 Windows 以后可能会发现 Windows 的时间不对了 ，因为 Windows 默认的硬件时钟是 localtime（</p> <p>可以用一条注册表键值让 Windows 使用 UTC 作为硬件时钟（在早于 Windows 7 的系统上发现过这样做会出现一些严重的问题： <a href="http://www.cl.cam.ac.uk/~mgk25/mswish/ut-rtc.html" target="_blank" rel="noopener noreferrer">http://www.cl.cam.ac.uk/~mgk25/mswish/ut-rtc.html<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> ）</p> <div class="language-text extra-class"><pre class="language-text"><code>reg add &quot;HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation&quot; /v RealTimeIsUniversal /d 1 /t REG_DWORD /f
+</code></pre></div><ul><li>/etc/locale.gen 是一个仅包含注释文档的文本文件。指定您需要的本地化类型，去掉对应行前面的注释符号（＃）就可以啦，还是用 nano 打开，建议选择帶UTF-8的項：</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># nano /etc/locale.gen</span>
+
+en_US.UTF-8 UTF-8
+zh_CN.UTF-8 UTF-8
+zh_TW.UTF-8 UTF-8
+</code></pre></div><ul><li>执行 locale-gen 以生成 locale 讯息：</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># locale-gen</span>
+</code></pre></div><ul><li>创建 locale.conf 并提交您的本地化选项：</li></ul> <p>将系统 locale 设置为en_US.UTF-8，系统的 Log 就会用英文显示，这样更容易问题的判断和处理。用户可以设置自己的 locale。</p> <p>警告: 不推荐在此设置任何中文locale，或导致tty乱码。</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># echo 用来输出某些文字，后面的大于号表示把输出保存到某个文件里啦~</span>
+<span class="token comment"># 或者可以用文字编辑器新建这个文件加上这一行。</span>
+
+<span class="token comment"># echo LANG=en_US.UTF-8 &gt; /etc/locale.conf</span>
+</code></pre></div><ul><li>设置一个喜欢的主机名（用汝的主机名代替 myhostname ）：</li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code>    <span class="token comment"># echo myhostname &gt; /etc/hostname</span>
+</code></pre></div><ul><li>设置 root 的密码（输入密码的时候就是啥也没有 ╮(￣▽￣)╭ ）：</li></ul> <div class="language-text extra-class"><pre class="language-text"><code>    [root@archiso /]# passwd
+    New password:
+    Retype new password:
+    passwd: password updated successfully
+</code></pre></div><ul><li><p>安装启动管理器（例如 GRUB ）：</p> <p>pacman 是 Arch Linux 的包管理器，目前汝需要知道的只有 <code>-S</code> 命令可以安装软件包 😂</p> <ul><li><p>UEFI 用户先再安装几个必要的软件包咯~</p> <div class="language-text extra-class"><pre class="language-text"><code>  # pacman -S efibootmgr dosfstools
+</code></pre></div></li> <li><p>然后安装 GRUB</p> <div class="language-text extra-class"><pre class="language-text"><code> # pacman -S grub os-prober
+</code></pre></div></li> <li><p>把 GRUB 安装到硬盘：</p> <div class="language-text extra-class"><pre class="language-text"><code> # MBR 用户这么做 （记得用汝自己硬盘的名称代替 sda ，不要带上表示分区的数字啦~）：
+
+ # grub-install --target=i386-pc /dev/sda --recheck
+
+ # UEFI 用户这么做：
+
+ # grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub --recheck
+</code></pre></div></li></ul></li></ul> <p>EFI 安装成功以后大概像这样 😂</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token punctuation">[</span>root@archiso /<span class="token punctuation">]</span><span class="token comment"># grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub --recheck</span>
+Installing <span class="token keyword">for</span> x86_64-efi platform.
+Installation finished. No error reported.
+</code></pre></div><p>然后生成必要的配置文件：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token punctuation">[</span>root@archiso /<span class="token punctuation">]</span><span class="token comment"># grub-mkconfig -o /boot/grub/grub.cfg</span>
+Generating grub configuration <span class="token function">file</span> <span class="token punctuation">..</span>.
+Found linux image: /boot/vmlinuz-linux
+Found initrd image<span class="token punctuation">(</span>s<span class="token punctuation">)</span> <span class="token keyword">in</span> /boot: initramfs-linux.img
+Found fallback initrd image<span class="token punctuation">(</span>s<span class="token punctuation">)</span> <span class="token keyword">in</span> /boot: initramfs-linux-fallback.img
+WARNING: Failed to connect to lvmetad. Falling back to device scanning.
+<span class="token keyword">done</span>
+</code></pre></div><h3 id="完工啦"><a href="#完工啦" class="header-anchor">#</a> 完工啦~</h3> <ul><li><p>离开 chroot 环境：</p> <div class="language-text extra-class"><pre class="language-text"><code># exit
+</code></pre></div></li> <li><p>卸载挂载的分区，（其实不是必须的，因为马上就重启啦~）</p> <div class="language-text extra-class"><pre class="language-text"><code># umount -R /mnt
+</code></pre></div></li> <li><p>重新启动，准备迎接新的系统吧 ~(&gt;_&lt;~)</p> <p>虽然好像只是个架子 😂，接下来咱们会进行一些配置把它搞成可以使用的样子？</p></li></ul></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/project-wolves/SPICE-and-Wolf/edit/master/install_arch_linux/install_arch_linux.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页面</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/SPICE-and-Wolf/assets/js/app.d40a4ed0.js" defer></script><script src="/SPICE-and-Wolf/assets/js/2.a9de799e.js" defer></script><script src="/SPICE-and-Wolf/assets/js/6.dea78bc5.js" defer></script>
+  </body>
+</html>
