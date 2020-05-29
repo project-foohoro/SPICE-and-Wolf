@@ -1,0 +1,16 @@
+{
+  "name": "SPICE-and-Wolf",
+  "version": "0.0.1",
+  "description": "(Pending) A simple Chinese guide for new GNU/Linux user. ",
+  "main": "README.md",
+  "repository": "https://github.com/project-wolves/SPICE-and-Wolf.git",
+  "author": "KenOokamiHoro <horo@yoitsu.moe>",
+  "license": "CC-BY-SA-4.0",
+  "devDependencies": {
+    "vuepress": "^1.5.0"
+  },
+  "scripts": {
+    "build": "vuepress build .",
+    "dev": "vuepress dev ."
+  }
+}
